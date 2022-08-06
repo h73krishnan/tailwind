@@ -21,7 +21,12 @@
             '1/3': '1 1 33%',
             '2/3': '1 1 67%',
             '1/4': '1 1 25%'
-          }
+          },
+            screens: {
+                sm: "300px",
+                md: "700px",
+                lg: "1025px",
+            },
         }
       }
     }
@@ -68,72 +73,263 @@
         </div>
     </section>
 
-    <!-- grid design -->
     <section>
-        <div class="grid-design flex gap-4 h-72 w-4/5 m-auto items-center mt-20 lg:mt-40 flex-col lg:flex-row">
-            <div class="design w-2/3 md:w-1/2 pl-12 grid grid-rows-[100px_40px_90px_30px] flex-1  bg-bgGrey flex-shrink-0">
-                <img src="./images/pen and diary.svg" alt="">
-                <h1 class="text-2xl font-bold">
-                   UI Design 
-                </h1>
-                <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <h1 class="text-arthurColor font-bold text-xl">
-                    KNOW MORE <i class="fa-solid fa-arrow-right"></i>
-                </h1>
+        <div class="hidden md:grid md:grid-cols-[100px_px] shadow w-full h-full mt-1 relative">
+            <div class="bg-bgGrey w-1/2 h-screen rounded">
+
             </div>
-            <div class="design pt-4 pl-12 w-2/3 md:w-1/2 grid grid-rows-[79px_60px_90px_30px] lg:grid-rows-[79px_40px_90px_30px] flex-1 bg-btnColor flex-shrink-0">
-                <img src="./images/notepad.svg" alt="">
-                <h1 class="text-2xl font-bold">
-                    Product Design
-                </h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                </p>
-                <h1 class=" font-bold text-xl">
-                    KNOW MORE <i class="fa-solid fa-arrow-right"></i>
-                </h1>
+            <div class="absolute">
+                <!-- grid design -->
+                <section>
+                    <div class="grid-design flex gap-4 h-72 sm:h-full w-4/5 m-auto items-center mt-5 lg:mt-40 flex-col sm:flex-col md:flex-row">
+                        <div class="design w-2/3 md:w-1/2 pl-12 grid grid-rows-[80px_30px_100px_40px] flex-1  bg-bgGrey flex-shrink-0">
+                            <img class="w-14" src="./images/pen and diary.svg" alt="">
+                            <h1 class="text-xl font-bold">
+                            UI Design 
+                            </h1>
+                            <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <h2 class="text-arthurColor font-bold ">
+                                KNOW MORE <i class="fa-solid fa-arrow-right"></i>
+                            </h2>
+                        </div>
+                        <div class="design pt-4 pl-12 w-2/3 md:w-1/2 grid grid-rows-[79px_60px_70px_30px] md:grid-rows-[65px_30px_100px_40px]  flex-1 bg-btnColor flex-shrink-0">
+                            <img src="./images/notepad.svg" alt="">
+                            <h1 class="text-xl font-bold">
+                                Product Design
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                            </p>
+                            <h3 class=" font-bold">
+                                KNOW MORE <i class="fa-solid fa-arrow-right"></i>
+                            </h3>
+                        </div>
+                        <div class="design w-2/3 md:w-1/2 grid grid-rows-[76px_40px_70px_30px] md:grid-rows-[74px_25px_100px_40px] pt-4 pl-12 flex-1 bg-bgGrey flex-shrink-0">
+                            <img class="w-16" src="./images/ruler.svg" alt="">
+                            <h1 class="text-xl font-bold">
+                                Branding
+                            </h1>
+                            <p >
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            </p>
+                            <h3 class="text-arthurColor font-bold ">
+                                KNOW MORE <i class="fa-solid fa-arrow-right"></i>
+                            </h3>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- grid numbers -->
+                <section>
+                    <div class="grid-numbers flex flex-col md:flex-row justify-center h-52 w-4/5 m-auto mt-5">
+                        <div class="number1 flex-1/3 flex flex-col justify-center mb-10 md:md-0">
+                        <h1 class="text-btnColor font-black text-4xl flex justify-center">12</h1>
+                        <h1 class="flex justify-center ">Years Experience</h1>
+                        </div>
+                        <div class="flex-2/3 grid grid-rows-[100px_100px] grid-cols-2 gap-4">
+                            <div class="grid grid-rows-[40px_40px] justify-center items-center bg-bgGrey text-bold pt-1">
+                                <h1 class="text-btnColor font-bold text-3xl flex justify-center">
+                                    60+</h1>
+                                <p class="flex">
+                                    Clients</p>
+                            </div>
+                            <div class="grid grid-rows-[40px_40px] justify-center items-center bg-bgGrey text-bold pt-1">
+                                <h1 class="text-btnColor font-bold text-3xl flex justify-center">
+                                    08</h1>
+                                <p class="flex">
+                                    Years Experience</p>
+                            </div>
+                            <div class="grid grid-rows-[40px_40px] justify-center items-center bg-bgGrey text-bold pt-1">
+                                <h1 class="text-btnColor font-bold text-3xl flex justify-center">
+                                    122+</h1>
+                                <p class="flex">
+                                    Completed Projects</p>
+                            </div>  
+                            <div class="grid grid-rows-[40px_40px] justify-center items-center bg-bgGrey text-bold pt-1">
+                                <h1 class="text-btnColor font-bold text-3xl flex justify-center">
+                                    10</h1>
+                                <p class="flex">
+                                Achievements</p>
+                            </div>
+                        </div>
+                    </div>    
+                </section>
             </div>
-            <div class="design w-2/3 md:w-1/2 grid grid-rows-[76px_40px_90px_30px] lg:grid-rows-[76px_40px_90px_30px] pt-4 pl-12 flex-1 bg-bgGrey flex-shrink-0">
-                <img src="./images/ruler.svg" alt="">
-                <h1 class="text-2xl font-bold">
-                    Branding
-                </h1>
-                <p >
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                </p>
-                <h1 class="text-arthurColor font-bold text-xl">
+        </div>
+    </section>
+<!-- section with no grey background -->
+    <section>
+        <!-- grid design -->
+        <section>
+            <div class="md:hidden grid-design flex gap-4 h-72 sm:h-full w-4/5 m-auto items-center mt-5 lg:mt-40 flex-col sm:flex-col md:flex-row">
+                <div class="design w-2/3 md:w-1/2 pl-12 grid grid-rows-[80px_30px_100px_40px] flex-1  bg-bgGrey flex-shrink-0">
+                    <img class="w-14" src="./images/pen and diary.svg" alt="">
+                    <h1 class="text-xl font-bold">
+                    UI Design 
+                    </h1>
+                    <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <h2 class="text-arthurColor font-bold ">
+                        KNOW MORE <i class="fa-solid fa-arrow-right"></i>
+                    </h2>
+                </div>
+                <div class="design pt-4 pl-12 w-2/3 md:w-1/2 grid grid-rows-[79px_60px_70px_30px] md:grid-rows-[65px_30px_100px_40px]  flex-1 bg-btnColor flex-shrink-0">
+                    <img src="./images/notepad.svg" alt="">
+                    <h1 class="text-xl font-bold">
+                        Product Design
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    </p>
+                    <h3 class=" font-bold">
+                        KNOW MORE <i class="fa-solid fa-arrow-right"></i>
+                    </h3>
+                </div>
+                <div class="design w-2/3 md:w-1/2 grid grid-rows-[76px_40px_70px_30px] md:grid-rows-[74px_25px_100px_40px] pt-4 pl-12 flex-1 bg-bgGrey flex-shrink-0">
+                    <img class="w-16" src="./images/ruler.svg" alt="">
+                    <h1 class="text-xl font-bold">
+                        Branding
+                    </h1>
+                    <p >
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <h3 class="text-arthurColor font-bold ">
+                        KNOW MORE <i class="fa-solid fa-arrow-right"></i>
+                    </h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- grid numbers -->
+        <section>
+            <div class="md:hidden grid-numbers flex flex-col md:flex-row justify-center h-52 w-4/5 m-auto mt-20 md:mt-5">
+                <div class="number1 flex-1/3 flex flex-col justify-center mb-10 md:md-0">
+                <h1 class="text-btnColor font-black text-4xl flex justify-center">12</h1>
+                <h1 class="flex justify-center ">Years Experience</h1>
+                </div>
+                <div class="flex-2/3 grid grid-rows-[100px_100px] grid-cols-2 gap-4">
+                    <div class="grid grid-rows-[40px_40px] justify-center items-center bg-bgGrey text-bold pt-1">
+                        <h1 class="text-btnColor font-bold text-3xl flex justify-center">
+                            60+</h1>
+                        <p class="flex">
+                            Clients</p>
+                    </div>
+                    <div class="grid grid-rows-[40px_40px] justify-center items-center bg-bgGrey text-bold pt-1">
+                        <h1 class="text-btnColor font-bold text-3xl flex justify-center">
+                            08</h1>
+                        <p class="flex">
+                            Years Experience</p>
+                    </div>
+                    <div class="grid grid-rows-[40px_40px] justify-center items-center bg-bgGrey text-bold pt-1">
+                        <h1 class="text-btnColor font-bold text-3xl flex justify-center">
+                            122+</h1>
+                        <p class="flex">
+                            Completed Projects</p>
+                    </div>  
+                    <div class="grid grid-rows-[40px_40px] justify-center items-center bg-bgGrey text-bold pt-1">
+                        <h1 class="text-btnColor font-bold text-3xl flex justify-center">
+                            10</h1>
+                        <p class="flex">
+                        Achievements</p>
+                    </div>
+                </div>
+            </div>    
+        </section>
+    </section>
+
+    <!-- grid button -->
+    <section>
+        <div class="grid-button flex w-3/4 h-30 m-auto mt-20 ml-30">
+            <div class="w-3/4  border-arthurColor">
+                <h1 class="text-xl font-bold">FEATURED PRODUCTS</h1>    
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="w-1/4 flex justify-center">
+                <button class="bg-arthurColor px-4 md:px-6 py-3">VIEW ALL</button>
+            </div>            
+        </div>
+    </section>
+
+    <!-- grid images -->
+    <section>
+        <div class="grid-images grid grid-rows-4 md:grid-cols-[280px_280px] md:grid-rows-[200px_200px] gap-6 w-3/4 m-auto mt-5">
+            <div class="w-full">
+                <div class="bg-bgGrey">
+                    <img class="p-5" src="./images/image-art.jpg" alt="">
+                </div>
+                <h2 class="font-bold text-xl md:font-bold">The Vintage</h2>
+                <h6 class="text-btnColor">
                     KNOW MORE <i class="fa-solid fa-arrow-right"></i>
-                </h1>
+                </h6>
+            </div>
+            <div class="w-full">
+                <div class="bg-bgGrey">
+                    <img class="p-5" src="./images/image-burger.jpg" alt="">
+                </div>
+                <h2 class="font-bold text-xl md:font-bold">Foodasa</h2>
+                <h3 class="text-btnColor">
+                    KNOW MORE <i class="fa-solid fa-arrow-right"></i>
+                </h3>
+            </div>
+            <div class="w-full">
+                <div class="bg-bgGrey">
+                    <img class="p-5" src="./images/image-sofa.jpg" alt="">
+                </div>
+                <h2 class="font-bold text-xl md:font-bold">Marco Accent</h2>
+                <h3 class="text-btnColor">
+                    KNOW MORE <i class="fa-solid fa-arrow-right"></i>
+                </h3>
+            </div>
+            <div class="h-72 w-full">
+                <div class="bg-bgGrey">
+                    <img class="p-5" src="./images/image-music.jpg" alt="">
+                </div>
+                <h2 class="font-bold text-xl md:font-bold">Mozaik</h2>
+                <h3 class="text-btnColor">
+                    KNOW MORE <i class="fa-solid fa-arrow-right"></i>
+                </h3>
             </div>
         </div>
     </section>
 
-    <!-- grid numbers -->
+    <!-- grid button -->
     <section>
-        <div class="grid-numbers flex justify-center  h-72 w-4/5 m-auto">
-            <div class="number1 flex-1/3 flex flex-col justify-center">
-              <h1 class="text-arthurColor font-bold text-7xl flex justify-center">12</h1>
-              <h1 class="text-xl flex justify-center ">Years Experience</h1>
+        <div class="grid-button flex w-3/4 h-30 m-auto md:mt-20 ml-30">
+            <div class="w-3/4  border-arthurColor">
+                <h1 class="text-xl font-bold">FEATURED PRODUCTS</h1>    
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
-            <div class="flex-2/3">
-                <div class="number2 number">
-                    <h1 class="">60+</h1>
-                     <p class="textBelow">Clients</p>
-                 </div>
-                 <div class="number3 number">
-                      <h1>08</h1>
-                    <p class="textBelow">Years Experience</p>
-                 </div>
-                 <div class="number4 number">
-                     <h1>122+</h1>
-                     <p class="textBelow">Completed Projects</p>
-                 </div>  
-                 <div class="number5 number">
-                     <h1>10</h1>
-                   <p class="textBelow">Achievements</p>
-                 </div>
-            </div>
-        </div>    
+            <div class="w-1/4 flex justify-center">
+                <button class="bg-arthurColor px-4 md:px-6 py-3">VIEW ALL</button>
+            </div>            
+        </div>
     </section>
+
+    <!-- Footer -->
+    <section aria-label="navbar">
+        <nav class="footer-1 flex items-center justify-center p-4 sm:p-10">
+            <ul class="hidden sm:flex lg:flex-1 justify-end items-center gap-12 sm:gap-4 md:gap-12">
+                <li class="cursor-pointer text-base">HOME
+                </li>
+                <li class="cursor-pointer text-base">PROJECT</li>
+                <li class="cursor-pointer text-base">ABOUT</li>
+                <li class="cursor-pointer text-base">CONTACT</li>
+                <li class="cursor-pointer text-base">OTHER PAGES</li>
+            </ul>
+        </nav>
+    </section> 
+    <section>
+        <nav class="footer-2 flex items-center p-4 sm:p-10">
+            <div>
+                <img src="./images/Logo.svg" alt="brand-logo" />
+            </div>
+            <ul class="hidden sm:flex lg:flex-1 justify-end items-center gap-12 sm:gap-4 md:gap-12">
+                <li class="cursor-pointer text-base"><i class="fa-brands fa-facebook-f"></i>
+                </li>
+                <li class="cursor-pointer text-base"><i class="fa-brands fa-youtube"></i></li>
+                <li class="cursor-pointer text-base"><i class="fa-brands fa-twitter"></i></li>
+                <li class="cursor-pointer text-base"><i class="fa-brands fa-youtube"></i></li>
+            </ul>
+        </nav>
+    </section> 
 </body>
 </html>

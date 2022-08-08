@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            arthurColor: '#852128',
+            btnColor: '#c91b28',
+            bgGrey1: '#181818',
+            bgGrey2: '#1e1e1e'
+          }, 
+          flex: {
+            '1/3': '1 1 33%',
+            '2/3': '1 1 67%',
+            '1/4': '1 1 25%'
+          },
+            screens: {
+                sm: "300px",
+                md: "700px",
+                lg: "1025px",
+            },
+        }
+      }
+    }
+</script>
+
+<body class="bg-black text-white">
+    <div class="absolute bg-bgGrey1 w-1/2 h-1/2 border-2 ">
+    </div>
+<!-- grid design -->
+    <div class="fixed grid-design flex gap-4 h-72 sm:h-full w-4/5 items-center mt-5 lg:mt-32 flex-col sm:flex-col md:flex-row mx-auto">
+        <div class="design w-2/3 md:w-1/2 pl-12 grid grid-rows-[80px_30px_100px_40px] flex-1  bg-bgGrey flex-shrink-0">
+            <img class="w-14" src="./images/pen and diary.svg" alt="">
+            <h1 class="text-xl font-bold">
+            UI Design 
+            </h1>
+            <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <h2 class="text-arthurColor font-bold ">
+                KNOW MORE <i class="fa-solid fa-arrow-right"></i>
+            </h2>
+        </div>
+        <div class="design pt-4 pl-12 w-2/3 md:w-1/2 grid grid-rows-[79px_60px_70px_30px] md:grid-rows-[65px_30px_100px_40px]  flex-1 bg-btnColor flex-shrink-0">
+            <img src="./images/notepad.svg" alt="">
+            <h1 class="text-xl font-bold">
+                Product Design
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            </p>
+            <h3 class=" font-bold">
+                KNOW MORE <i class="fa-solid fa-arrow-right"></i>
+            </h3>
+        </div>
+        <div class="design w-2/3 md:w-1/2 grid grid-rows-[76px_40px_70px_30px] md:grid-rows-[74px_25px_100px_40px] pt-4 pl-12 flex-1 bg-bgGrey flex-shrink-0">
+            <img class="w-16" src="./images/ruler.svg" alt="">
+            <h1 class="text-xl font-bold">
+                Branding
+            </h1>
+            <p >
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </p>
+            <h3 class="text-arthurColor font-bold ">
+                KNOW MORE <i class="fa-solid fa-arrow-right"></i>
+            </h3>
+        </div>
+    </div>
+
+<!-- grid numbers -->
+    <div class="fixed grid-numbers flex flex-col md:flex-row justify-center h-52 w-4/5 m-auto mt-5">
+        <div class="number1 flex-1/3 flex flex-col justify-center mb-10 md:md-0">
+        <h1 class="text-btnColor font-black text-4xl flex justify-center">12</h1>
+        <h1 class="flex justify-center ">Years Experience</h1>
+        </div>
+        <div class="flex-2/3 grid grid-rows-[100px_100px] grid-cols-2 gap-4">
+            <div class="grid grid-rows-[40px_40px] justify-center items-center bg-bgGrey2 text-bold pt-1">
+                <h1 class="text-btnColor font-bold text-3xl flex justify-center">
+                    60+</h1>
+                <p class="flex">
+                    Clients</p>
+            </div>
+            <div class="grid grid-rows-[40px_40px] justify-center items-center bg-bgGrey2 text-bold pt-1">
+                <h1 class="text-btnColor font-bold text-3xl flex justify-center">
+                    08</h1>
+                <p class="flex">
+                    Years Experience</p>
+            </div>
+            <div class="grid grid-rows-[40px_40px] justify-center items-center bg-bgGrey2 text-bold pt-1">
+                <h1 class="text-btnColor font-bold text-3xl flex justify-center">
+                    122+</h1>
+                <p class="flex">
+                    Completed Projects</p>
+            </div>  
+            <div class="grid grid-rows-[40px_40px] justify-center items-center bg-bgGrey2 text-bold pt-1">
+                <h1 class="text-btnColor font-bold text-3xl flex justify-center">
+                    10</h1>
+                <p class="flex">
+                Achievements</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

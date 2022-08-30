@@ -27,13 +27,13 @@
             }
           }
         }
-      </script>
+    </script>
 </head>
-<body class="fontFamil">
+<body class="fontFamil max-w-9xl bg-[#f5f7fa]">
     <!-- navbar section -->
     <section aria-label="header">
-       <div class="flex justify-between items-center h-20 sm:px-2 md:px-10 mx-auto">
-            <div class="flex items-center justify-between w-60">
+       <div class="flex justify-between items-center h-20 sm:px-2 md:px-10 ">
+            <div class="flex items-center justify-between w-full">
                 <div>
                     <i class="fa-solid fa-bars"></i>
                 </div>
@@ -51,7 +51,7 @@
     </section>
     <!-- kyc section -->
     <section aria-label="Payment-app">
-        <div class="bg-[#f6f6f6] flex sm:justify-around justify-center items-center h-16 sm:text-xs md:text-xl shadow-inner">
+        <div class="bg-[#f6f6f6] flex sm:justify-around md:justify-center items-center h-16 sm:text-xs md:text-xl shadow-inner ">
             <span class="font-sans font-bold">
                 No Wallet KYC Required
             </span>
@@ -66,109 +66,384 @@
     </section>
     <!-- Payment app section -->
     <section aria-label="Payment-app">
-        <div class="text-multi-image grid sm:grid-rows-[400px_200px] sm:space-y-10
-        lg:grid-cols-2 my-10">
-            <div class="text space-y-10">
-                <div class="sm:flex sm:justify-center">
-                    <img class="w-20" src="https://assetscdn1.paytm.com/images/catalog/view/310944/1654517453942.png" alt="">
+        <div class="flex justify-evenly">
+            <div class="text-multi-image sm:flex sm:flex-col sm:items-center lg:flex-row w-screen h-screen sm:space-y-10 lg:pl-20">
+                <div class="text space-y-4">
+                    <div class="flex sm:justify-center lg:justify-start">
+                        <img class="w-20" src="https://assetscdn1.paytm.com/images/catalog/view/310944/1654517453942.png" alt="">
+                    </div>
+                    <div class="flex sm:justify-center lg:justify-start">
+                        <h1 class="md:text-3xl lg:text-7xl font-bold">
+                            India's Most-loved Payments App
+                        </h1>
+                    </div>
+                    <div class="flex sm:justify-center lg:justify-start">
+                        <p class="text-2xl w-3/4">
+                            Recharge & pay bills, book flights & movie tickets, open a savings account, invest in stocks & mutual funds, and do a lot more.
+                        </p>
+                    </div>
+                    <div class="flex sm:justify-center lg:justify-start my-72">
+                        <button class="bg-[#0D0D0D] text-white rounded-3xl py-3 px-4 w-60 flex justify-around items-center">
+                            Download Paytm App 
+                            <i class="fa-brands fa-apple" class="text-black"></i>
+                            <i class="fa-brands fa-google-play"></i>
+                        </button>
+                    </div>
                 </div>
-                <div class="sm:flex sm:justify-center ">
-                    <h1 class="md:text-3xl lg:text-7xl font-bold">
-                        India's Most-loved Payments App
-                    </h1>
+                <div class="multi-image m-4 flex justify-center">
+                    <img class="sm:w-60 md:w-96 md:h-96 lg:h-full lg:w-3/4" src="https://assetscdn1.paytm.com/images/catalog/view_item/850762/1656568118664.png" alt="">
                 </div>
-                <div class="sm:flex sm:justify-center ">
-                    <p class="text-2xl w-3/4">
-                        Recharge & pay bills, book flights & movie tickets, open a savings account, invest in stocks & mutual funds, and do a lot more.
-                    </p>
-                </div>
-                <div class="sm:flex sm:justify-center ">
-                    <button class="bg-[#0D0D0D] text-white rounded-3xl py-3 px-4 w-60 flex justify-around items-center">
-                        Download Paytm App 
-                        <i class="fa-brands fa-apple" class="text-black"></i>
-                        <i class="fa-brands fa-google-play"></i>
-                    </button>
-                </div>
-            </div>
-            <div class="multi-image border-2">
-                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/850762/1656568118664.png" alt="">
             </div>
         </div>
     </section>
 
     <!-- Recharge section -->
-    <section aria-label="Recharge">
-        
-        <div class="bg-[#00baf2] text-[#f8fafc] h-96 my-52">
-            <div >
+    <section aria-label="Recharge" >      
+        <div class="bg-[#00baf2] text-[#f8fafc] sm:h-max sm:mt-32 md:mt-96 lg:mt-44 ">
+            <div class="flex lg:justify-start">
                 <h1 class="text-3xl font-bold my-10">Recharge & Pay Bills on Paytm.</h1>
             </div>
-            <div class="grid grid-cols-7">
-                <div class="w-32">
-                    <div class="w-20">
-                        <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733299/1626251017535.png" alt="">
-                    </div>
-                    <div class="text-xl">
-                        Recharge Prepaid Mobile
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </div>
-                </div>
-                <div>
-                    <div class="w-20">
-                        <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733300/1626778824903.png" alt="">
-                    </div>
+            <div class="flex flex-wrap justify-center lg:justify-evenly">
+                <div class="w-32 ">
                     <div>
-                        Pay Rent Payment
-                        <i class="fa-solid fa-chevron-right"></i>
+                        <img class="sm:w-16 md:w-20" src="https://assetscdn1.paytm.com/images/catalog/view_item/733299/1626251017535.png" alt="">
+                    </div>
+                    <div class="w-24 flex flex-col">
+                        <p class="sm:text-sm md:text-xl font-bold">Recharge 
+                        </p>
+                        <p class="sm:text-sm md:text-xl text-xl font-bold">Prepaid
+                        </p>
+                        <p class="sm:text-sm md:text-xl text-xl font-bold">Mobile
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </p>
                     </div>
                 </div>
-                <div>
-                    <div class="w-20">
+                <div class="w-32">
+                    <div >
+                        <img class="sm:w-16 md:w-20" src="https://assetscdn1.paytm.com/images/catalog/view_item/733300/1626778824903.png" alt="">
+                    </div>
+                    <div class="w-28 flex flex-col">
+                        <p class="sm:text-sm md:text-xl text-xl font-bold">Pay rent
+                        </p>
+                        <p class="sm:text-sm md:text-xl text-xl font-bold">Payment
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </p>
+                        
+                    </div>
+                </div>
+                <div class="w-32">
+                    <div class="sm:w-16 md:w-20">
                         <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733308/1626251043534.png" alt="">
                     </div>
-                    <div>
-                        Pay Electricity Bill
-                        <i class="fa-solid fa-chevron-right"></i>
+                    <div class="p-4">
+                        <p class="sm:text-sm md:text-xl font-bold">Pay 
+                        </p>
+                        <p class="sm:text-sm md:text-xl font-bold">Electricity
+                        </p>
+                        <p class="sm:text-sm md:text-xl font-bold">Bill
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </p>
                     </div>
                 </div>
-                <div>
-                    <div class="w-20">
+                <div class="w-32">
+                    <div class="sm:w-16 md:w-20">
                         <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733311/1626251101045.png" alt="">
                     </div>
-                    <div>
-                        Recharge DTH Connection
-                        <i class="fa-solid fa-chevron-right"></i>
+                    <div class="p-3">
+                        <p class="sm:text-sm md:text-xl font-bold">Recharge  
+                        </p>
+                        <p class="sm:text-sm md:text-xl font-bold">DTH
+                        </p>
+                        <p class="sm:text-sm md:text-xl font-bold">Connection
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </p>
                     </div>
                 </div>
-                <div>
-                    <div class="w-20">
+                <div class="w-32">
+                    <div class="sm:w-16 md:w-20">
                         <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733307/1626251127863.png" alt="">
                     </div>
-                    <div>
-                        Book Gas Cylinder
-                        <i class="fa-solid fa-chevron-right"></i>
+                    <div class="p-3">
+                        <p class="sm:text-sm md:text-xl font-bold">Book Gas Cylinder
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </p>
                     </div>
                 </div>
-                <div>
-                    <div class="w-20">
+                <div class="w-32">
+                    <div class="sm:w-16 md:w-20">
                         <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733304/1627454209116.png" alt="">
                     </div>
-                    <div>
-                        Pay Credit Card Bill
-                        <i class="fa-solid fa-chevron-right"></i>
+                    <div class="p-3">
+                        <p class="sm:text-sm md:text-xl font-bold">Pay Credit Card Bill
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </p>
                     </div>
                 </div>
-                <div>
-                    <div class="w-20">
+                <div class="w-32">
+                    <div class="sm:w-16 md:w-20">
                         <img src="https://assetscdn1.paytm.com/images/catalog/view_item/757701/1626268580682.png" alt="">
                     </div>
-                    <div>
-                        All Payment Services
-                        <i class="fa-solid fa-chevron-right"></i>
+                    <div class="p-3">
+                        <p class="sm:text-sm md:text-xl font-bold ">All Payment Services
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </p>
                     </div>
                 </div>
               
     
+            </div>
+        </div>
+    </section>
+    
+    <!-- Book and buy section -->
+    <section aria-label="Recharge" >      
+        <div class="bg-[#0f4a8a] text-[#f8fafc] sm:h-max ">
+            <div class="flex lg:justify-start">
+                <h1 class="text-3xl font-bold my-10">Book & Buy on Paytm</h1>
+            </div>
+            <div class="flex flex-wrap justify-center lg:justify-evenly">
+                <div class="w-32 ">
+                    <div>
+                        <img class="sm:w-16 md:w-20" src="https://assetscdn1.paytm.com/images/catalog/view_item/733295/1626259710574.png" alt="">
+                    </div>
+                    <div class="w-24 flex flex-col">
+                        <p class="sm:text-sm md:text-xl font-bold">Movie 
+                        </p>
+                            <p class="sm:text-sm md:text-xl text-xl font-bold">Tickets<i class="fa-solid fa-chevron-right"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="w-32 ">
+                    <div >
+                        <img class="sm:w-16 md:w-20" src="https://assetscdn1.paytm.com/images/catalog/view_item/733296/1626259884425.png" alt="">
+                    </div>
+                    <div class="w-28 flex flex-col">
+                        <p class="sm:text-sm md:text-xl text-xl font-bold">Flight
+                        </p>
+                        <p class="sm:text-sm md:text-xl text-xl font-bold">Tickets
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </p>
+                        
+                    </div>
+                </div>
+                <div class="w-32">
+                    <div class="sm:w-16 md:w-20">
+                        <img src="https://assetscdn1.paytm.com/images/catalog/view_item/729996/1626260477699.png" alt="">
+                    </div>
+                    <div class="p-4">
+                        <p class="sm:text-sm md:text-xl font-bold">Bus
+                        </p>
+                        <p class="sm:text-sm md:text-xl font-bold">Ticket
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="w-32">
+                    <div class="sm:w-16 md:w-20">
+                        <img src="https://assetscdn1.paytm.com/images/catalog/view_item/729997/1626260495975.png" alt="">
+                    </div>
+                    <div class="p-3">
+                        <p class="sm:text-sm md:text-xl font-bold">Car &
+                        </p>
+                        <p class="sm:text-sm md:text-xl font-bold">Bikes
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="w-32">
+                    <div class="sm:w-16 md:w-20">
+                        <img src="https://assetscdn1.paytm.com/images/catalog/view_item/729998/1626259953707.png" alt="">
+                    </div>
+                    <div class="p-3">
+                        <p class="sm:text-sm md:text-xl font-bold">International
+                        </p>
+                        <p class="sm:text-sm md:text-xl font-bold">Flights
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="w-32">
+                    <div class="sm:w-16 md:w-20">
+                        <img src="https://assetscdn1.paytm.com/images/catalog/view_item/729999/1626259968563.png" alt="">
+                    </div>
+                    <div class="p-3">
+                        <p class="sm:text-sm md:text-xl font-bold">Invest
+                        </p>
+                        <p class="sm:text-sm md:text-xl font-bold">in Stocks
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="w-32">
+                    <div class="sm:w-16 md:w-20">
+                        <img src="https://assetscdn1.paytm.com/images/catalog/view_item/730001/1626450848003.png" alt="">
+                    </div>
+                    <div class="p-3">
+                        <p class="sm:text-sm md:text-xl font-bold ">All Payment Services
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </p>
+                    </div>
+                </div>
+              
+    
+            </div>
+        </div>
+    </section>
+
+    <h1 class="text-7xl font-sans font-bold flex justify-center">
+        Paytm Payment Instructions
+    </h1>
+
+<!-- Section paytm wallet -->
+    <section>
+        <div class="flex justify-evenly border-2">
+            <div class="text-multi-image sm:flex sm:flex-col sm:items-center lg:flex-row w-screen h-screen sm:space-y-10 lg:pl-20">
+                <div class="text space-y-4">
+                    <div class="flex sm:justify-center items-center lg:justify-start">
+                        <div>
+                            <img class="w-20" src="https://assetscdn1.paytm.com/images/catalog/view/310944/1654517453942.png" alt="">
+                        </div>
+                        <div>
+                            <p class="font-bold">UPI Money</p>
+                            <p class="font-bold">Transfer</p>
+                        </div>
+                    </div>
+                    <div class="flex sm:justify-center lg:justify-start">
+                        <h1 class="md:text-3xl lg:text-7xl font-bold">
+                            The Fastest Way to Pay In-store &Online
+                        </h1>
+                    </div>
+                    <div class="flex sm:justify-center lg:justify-start">
+                        <p class="text-2xl w-3/4">
+                            Load up your Paytm Wallet for free and make payments in a jiffy at over 21 million stores, websites and apps.
+                        </p>
+                    </div>
+                    <div class="flex sm:justify-center lg:justify-start my-72">
+                        <button class="bg-[#0D0D0D] text-white rounded-3xl py-3 px-4 w-60 flex justify-around items-center">
+                            Download Paytm App 
+                            <i class="fa-brands fa-apple" class="text-black"></i>
+                            <i class="fa-brands fa-google-play"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="multi-image m-4 flex justify-center">
+                    <img class="sm:w-60 md:w-96 md:h-96 lg:h-full lg:w-3/4" src="https://assetscdn1.paytm.com/images/catalog/view_item/728701/1618577020961.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Section UPI money -->
+    <section>
+        <div class="flex justify-evenly sm:mt-40 md:mt-40">
+            <div class="text-multi-image sm:flex sm:flex-col sm:items-center lg:flex-row w-screen h-screen sm:space-y-10 lg:pl-20">
+                <div class="text space-y-4">
+                    <div class="flex sm:justify-center items-center lg:justify-start">
+                        <div>
+                            <img class="w-20" src="https://assetscdn1.paytm.com/images/catalog/view/307186/1615957674521.png" alt="">
+                        </div>
+                        <div>
+                            <p class="font-bold">Paytm</p>
+                            <p class="font-bold">Wallet</p>
+                        </div>
+                    </div>
+                    <div class="flex sm:justify-center lg:justify-start">
+                        <h1 class="md:text-3xl lg:text-7xl font-bold">
+                            Pay anyone directly from your bank account.
+                        </h1>
+                    </div>
+                    <div class="flex sm:justify-center lg:justify-start">
+                        <p class="text-2xl w-3/4">
+                            Pay anyone, everywhere. Make contactless & secure payments in-stores or online using Paytm Wallet or Directly from your Bank Account. Plus, send & receive money from anyone.
+                        </p>
+                    </div>
+                    <div class="flex sm:justify-center lg:justify-start my-72">
+                        <button class="bg-[#0D0D0D] text-white rounded-3xl py-3 px-4 w-60 flex justify-around items-center">
+                            Download Paytm App 
+                            <i class="fa-brands fa-apple" class="text-black"></i>
+                            <i class="fa-brands fa-google-play"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="multi-image m-4 flex justify-center">
+                    <img class="sm:w-60 md:w-96 md:h-96 lg:h-full lg:w-3/4" src="https://assetscdn1.paytm.com/images/catalog/view_item/728702/1626342071104.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Section Unlimited cash -->
+section>
+        <div class="flex w-screen ">
+            <div class="flex justify-center sm:mt-40 md:mt-40 ">
+                <div class="text-multi-image sm:flex sm:flex-col sm:items-center   sm:space-y-10">
+                    <div class="text space-y-4">
+                        <div class="flex sm:justify-center items-center">
+                            <div>
+                                <img class="w-20" src="https://assetscdn1.paytm.com/images/catalog/view/307186/1615957674521.png" alt="">
+                            </div>
+                            <div>
+                                <p class="font-bold">Paytm</p>
+                                <p class="font-bold">Wallet</p>
+                            </div>
+                        </div>
+                        <div class="flex sm:justify-center ">
+                            <h1 class="md:text-3xl  font-bold">
+                                Pay anyone directly from your bank account.
+                            </h1>
+                        </div>
+                        <div class="flex sm:justify-center ">
+                            <p class="text-2xl w-3/4">
+                                Pay anyone, everywhere. Make contactless & secure payments in-stores or online using Paytm Wallet or Directly from your Bank Account. Plus, send & receive money from anyone.
+                            </p>
+                        </div>
+                        <div class="flex sm:justify-center  my-72">
+                            <button class="bg-[#0D0D0D] text-white rounded-3xl py-3 px-4 w-60 flex justify-around items-center">
+                                Download Paytm App 
+                                <i class="fa-brands fa-apple" class="text-black"></i>
+                                <i class="fa-brands fa-google-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="multi-image m-4 flex justify-center">
+                        <img class="sm:w-60 md:w-96 md:h-96  " src="https://assetscdn1.paytm.com/images/catalog/view_item/853975/1640241561388.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-evenly sm:mt-40 md:mt-40">
+                <div class="text-multi-image sm:flex sm:flex-col sm:items-center  sm:space-y-10 ">
+                    <div class="text space-y-4">
+                        <div class="flex sm:justify-center items-center ">
+                            <div>
+                                <img class="w-20" src="https://assetscdn1.paytm.com/images/catalog/view/307186/1615957674521.png" alt="">
+                            </div>
+                            <div>
+                                <p class="font-bold">Paytm</p>
+                                <p class="font-bold">Wallet</p>
+                            </div>
+                        </div>
+                        <div class="flex sm:justify-center ">
+                            <h1 class="md:text-3xl  font-bold">
+                                Pay anyone directly from your bank account.
+                            </h1>
+                        </div>
+                        <div class="flex sm:justify-center ">
+                            <p class="text-2xl w-3/4">
+                                Pay anyone, everywhere. Make contactless & secure payments in-stores or online using Paytm Wallet or Directly from your Bank Account. Plus, send & receive money from anyone.
+                            </p>
+                        </div>
+                        <div class="flex sm:justify-center  my-72">
+                            <button class="bg-[#0D0D0D] text-white rounded-3xl py-3 px-4 w-60 flex justify-around items-center">
+                                Download Paytm App 
+                                <i class="fa-brands fa-apple" class="text-black"></i>
+                                <i class="fa-brands fa-google-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="multi-image m-4 flex justify-center">
+                        <img class="sm:w-60 md:w-96 md:h-96" src="https://assetscdn1.paytm.com/images/catalog/view_item/853976/1626079147084.png" alt="">
+                    </div>
+                </div>
             </div>
         </div>
     </section>

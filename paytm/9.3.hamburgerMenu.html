@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            background-color: #262626;
+        }
+        /* header{
+            background-color: #262626;
+        } */
+        li{
+            list-style:none;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        /* .navbar{
+            min-height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            left and right
+            padding: 0 24px;
+        } */
+        .nav-menu{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap:60px;
+        }
+        .nav-branding{
+            font-size: 2rem;
+        }
+        /* hover */
+        .nav-link{
+            transition:0.7s ease;
+        }
+        .nav-link:hover{
+            color: dodgerblue;
+        }
+        .hamburger{
+            /* not want to display it */
+            display: none;
+            cursor:pointer; 
+        }
+        .bar{
+            display: block;
+            width: 25px;
+            height: 3px;
+            /* left and right v auto */
+            margin: 5px auto;
+            /*  */
+            transition: all 0.3s ease-in-out;
+            background-color: #fff;
+        }
+        @media(max-width: 768px){
+            .hamburger{
+                display: block;
+            }
+            /* change to x with js*/
+            .hamburger.active .bar:nth-child(2){
+                opacity:0;
+            }
+            .hamburger.active .bar:nth-child(1){
+                transform: translateY(8px) rotate(45deg);
+            }
+            .hamburger.active .bar:nth-child(3){
+                transform: translateY(-8px) rotate(-45deg);
+            }
+            .nav-menu{
+                /* scroll menu on screen */
+                position: fixed;
+                left: -100%;
+                /* hide */
+                top: 70px;
+                flex-direction: column;
+                background-color: #262626;
+                align-items: center;
+                transition: 0.3s;
+                /* take this time to appear on the screen */
+            }
+            /* activate with js */
+            .nav-menu.active{
+                left: 0;
+                width: 100vh;
+                border:2px solid red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav-menu">
+        <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+        </li>
+        <li class="nav-items">
+            <a href="#" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Contact</a>
+        </li>
+    </ul>
+    <div class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+</body>
+</html>
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", () =>{
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    })    
+</script>

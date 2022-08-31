@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              },
+              fontFamily: {
+                'sans': ['sans-serif'],
+              }
+            },
+            screens: {
+                'sm': '300px',
+
+                'md': '700px',
+
+                'lg': '1025px'
+            }
+          }
+        }
+    </script>
+    const Myclass = plugin(function ({ addUtilities }) {
+        addUtilities({});
+      });
+      module.exports = {
+        mode: "jit",
+        content: ["./src/*.html"],
+        theme: {
+          extend: {},
+        },
+        plugins: [Myclass],
+      };
+</head>
+<body class="bg-[#262626] text-white">
+    <nav class="navbar">
+        <!-- <ul class="nav-menu w-screen border-2 flex sm:flex-col sm:items-center lg:flex-row justify-between items-center gap-16 sm:fixed lg:relative sm:-left-full lg:left-0 sm:duration-300" class="active">
+            <li class="nav-item no-underline">
+                <a href="#" class="nav-link font-bold no-underline sm:duration-300">Home</a>
+            </li>
+            <li class="nav-items">
+                <a href="#" class="nav-link font-bold no-underline sm:duration-300">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="nav-link font-bold no-underline sm:duration-300">Contact</a>
+            </li>
+        </ul> -->
+        <div class="hamburger sm:inline-block lg:hidden cursor-pointer">
+            <div class="bar inline-block w-6 h-px my-1.5 mx-auto transition sm:opacity-0 lg:opacity-100" ></div>
+            <div class="bar inline-block w-6 h-px my-1.5 mx-auto transition sm:translate-y-2 lg:translate-y-0 sm:rotate-45 lg:rotate-0" ></div>
+            <div class="bar inline-block w-6 h-px my-1.5 mx-auto transition sm:-translate-y-2 lg:translate-y-0 sm:-rotate-45  lg:rotate-0" ></div>
+        </div>
+    </nav>
+</body>
+</html>
+
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", ()=>{
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+
+    })
+    
+</script>

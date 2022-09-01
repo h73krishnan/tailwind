@@ -6,3 +6,6 @@
     ```
     npx tailwindcss -i ./src/input.css -o ./dist/output.css
     ```
+2. ### Common Errors
+- already-upto-date: 
+- Solution: 
